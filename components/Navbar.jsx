@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import logoM from '@/public/assets/logoM.png'
 import logoD from '@/public/assets/logoD.png'
-import { CiMenuKebab } from "react-icons/ci";
+import { CgMenuMotion } from "react-icons/cg";
 import Button from './Button'
 import Image from 'next/image'
 import Sidebar from './Sidebar'
@@ -39,7 +39,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div onClick={() => setSidebarOpen(true)} className='block md:hidden'>
-        <CiMenuKebab className='text-4xl text-black' />
+        <CgMenuMotion className='text-4xl text-black' />
       </div>
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
     </nav>
