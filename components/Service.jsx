@@ -1249,7 +1249,7 @@ const Servces = () => {
                             <h2 className="font-bold text-2xl py-1">{service.title}</h2>
                         </div>
 
-                        <p className="text-lg h-26 overflow-hidden mt-6 ">
+                        <p className="text-lg md:h-26 overflow-hidden mt-6 ">
                             {service.description}
                         </p>
                         <p className="md:text-lg font-black pt-1 text-gray-400">{service.mail} <span className="text-emerald-500">{service.inner}</span></p>

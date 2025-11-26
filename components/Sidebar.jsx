@@ -2,7 +2,14 @@
 import React from 'react'
 import { useState } from "react";
 import { FiX, FiChevronDown } from "react-icons/fi";
-
+import {
+  HiHome,
+  HiUser,
+  HiBadgeCheck,
+  HiFolder,
+  HiChatAlt2,
+  HiMail
+} from "react-icons/hi";
 import logoD from '@/public/assets/logoD.png'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -29,13 +36,13 @@ const Sidebar = ({ open, onClose }) => {
         </div>
 
         {/* Menu Links */}
-        <ul className="flex flex-col p-4 w-[80vw] space-y-4">
-          <Link   onClick={onClose}  href={WEBSITE_HOME} className="bg-emerald-700 py-1 px-3 rounded-xl">Home</Link>
-          <Link  onClick={onClose} href={WEBSITE_ABOUT} className="bg-emerald-700 py-1 px-3 rounded-xl">About</Link>
-          <Link  onClick={onClose} href={WEBSITE_SERVICES} className="bg-emerald-700 py-1 px-3 rounded-xl">Services</Link>
-          <Link onClick={onClose} href={WEBSITE_PROJECTS} className="bg-emerald-700 py-1 px-3 rounded-xl">Projects</Link>
-          <Link onClick={onClose} href={WEBSITE_REVIEWS} className="bg-emerald-700 py-1 px-3 rounded-xl">Reviews</Link>
-          <Link onClick={onClose} href={WEBSITE_CONTACT} className="bg-emerald-700 py-1 px-3 rounded-xl">Contact</Link>
+         <ul className="flex flex-col p-4 w-[80vw] space-y-4">
+          <Link   onClick={onClose}  href={WEBSITE_HOME} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiHome/></span>Home</Link>
+          <Link  onClick={onClose} href={WEBSITE_ABOUT} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiUser/></span>About</Link>
+          <Link  onClick={onClose} href={WEBSITE_SERVICES} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiBadgeCheck/></span>Services</Link>
+          <Link onClick={onClose} href={WEBSITE_PROJECTS} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiFolder/></span>Projects</Link>
+          <Link onClick={onClose} href={WEBSITE_REVIEWS} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiChatAlt2/></span>Reviews</Link>
+          <Link onClick={onClose} href={WEBSITE_CONTACT} className="text-emerald-500 text-2xl py-1 px-3 rounded-xl flex items-center gap-3"><span className='text-3xl'><HiMail/></span>Contact</Link>
         </ul>
 
         {/* Quote Button */}

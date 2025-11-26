@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import logoM from '@/public/assets/logoM.png'
 import logoD from '@/public/assets/logoD.png'
-
+import { CiMenuKebab } from "react-icons/ci";
 import Button from './Button'
 import Image from 'next/image'
 import Sidebar from './Sidebar'
@@ -16,7 +16,7 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathName = usePathname()
   return (
-    <nav className=' bg-emerald-500/96 md:bg-black/70 pl-0 px-5 h-20 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
+    <nav className=' bg-emerald-500/96 md:bg-black/70 pl-0 px-5 h-18 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
       <Link href={WEBSITE_HOME}>
       <div className=' md:px-16'>
         <Image className='w-34 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div onClick={() => setSidebarOpen(true)} className='block md:hidden'>
-        <GiHamburgerMenu className='text-4xl text-black' />
+        <CiMenuKebab className='text-4xl text-black' />
       </div>
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
     </nav>
