@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { ToastContainer } from "react-toastify";
 
 const CormorantFont=Cormorant_Garamond({
   weight:['400','500','600','700',],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${CormorantFont.className}  antialiased `}
       >
+        <ToastContainer />
        <Navbar/>
         {children}
         <Link href='https://wa.me/923117787395'>

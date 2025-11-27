@@ -14,13 +14,28 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+import { zodResolver } from "@hookform/resolvers/zod"
+
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { useForm } from "react-hook-form"
+import { zSchema } from "@/lib/zodSchema"
+import { toast } from "react-toastify"
+import { useState } from "react"
+import axios from "axios"
+import ButtonLoader from "./ButtonLoader"
 
 export default function ContactSection() {
+    const [loading, setloading] = useState(false)
+     const formSchema = zSchema.pick({
+        email: true,
+        name: true,
+        message: true,
+
+    })
     const form = useForm({
+        resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
             email: "",
@@ -28,9 +43,23 @@ export default function ContactSection() {
         },
     })
 
-    const onSubmit = (values) => {
-        console.log(values)
-        // You can integrate EmailJS, Nodemailer, or API route here.
+    const onSubmit = async(values) => {
+         try {
+            setloading(true)
+            const { data: ResponseSend } = await axios.post('/api/sendMail', values)
+            if (!ResponseSend.success) {
+                toast.error(ResponseSend.message)
+            }
+            if (ResponseSend.success) {
+                form.reset()
+                toast.success(ResponseSend.message)
+            }
+        } catch (error) {
+            toast.error(error)
+        } finally {
+            setloading(false)
+        }
+        
     }
 
     return (
@@ -114,12 +143,11 @@ export default function ContactSection() {
                                     />
 
                                     {/* Submit Button */}
-                                    <Button
-                                        type="submit"
+                                    <ButtonLoader
+                                       type={'submit'} text={'Submit'} loading={loading}
                                         className="w-full bg-emerald-500 hover:bg-emerald-600 cursor-pointer text-black font-semibold text-lg py-6 rounded-xl transition-all"
-                                    >
-                                        Submit
-                                    </Button>
+                                    />
+                                      
                                 </form>
                             </Form>
                         </CardContent>
