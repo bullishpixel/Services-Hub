@@ -9,6 +9,38 @@ import { SiRelianceindustrieslimited } from "react-icons/si";
 import ContactSection from '@/components/ContactForm'
 import Faqs from '@/components/FAQS'
 
+export const metadata = {
+  title: "Our Services — Marketing, Trading with AI & Web Solutions",
+  description:
+    "Explore Bullish Pixel’s range of digital services including Trading, Shopify development, WordPress websites, marketing, custom web applications, tuitions, coaching, and LLC/LTD/Pvt company registration.",
+  keywords: [
+    "Bullish Pixel Services",
+    "Trading with AI",
+    "Digital Agency Services",
+    "Shopify Development",
+    "WordPress Development",
+    "Marketing Services",
+    "Tuitions Services",
+    "Custom Web Development",
+    "Company Registration Services",
+  ],
+  openGraph: {
+    title: "Services — Bullish Pixel",
+    description:
+      "Professional services including Shopify, WordPress, marketing, custom development, trading tuition, coaching, and company registration.",
+    url: "https://bullishpixel.com/services",
+    type: "website",
+    images: ["https://bullishpixel.com/og-default.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bullish Pixel — Our Services",
+    description:
+      "Trading, marketing, Shopify, WordPress, custom development, and company registration.",
+    images: ["https://bullishpixel.com/og-default.png"],
+  },
+};
+
 
 const ServicesPage = () => {
     return (

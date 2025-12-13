@@ -111,6 +111,7 @@ export default function HeroSection() {
                                 <div className="h-[100%] w-[100%] relative">
                                     <Image
                                         src={middleRingImages[i % middleRingImages.length]}
+                                        priority={true}
                                         alt={`middle-ring-${i}`}
                                         fill
                                         className="object-contain"
@@ -146,6 +147,7 @@ export default function HeroSection() {
                                 <div className="h-[100%] w-[100%] relative">
                                     <Image
                                         src={innerRingImages[i % innerRingImages.length]}
+                                        priority={true}
                                         alt={`inner-ring-${i}`}
                                         fill
                                         className="object-contain"
@@ -166,7 +168,7 @@ export default function HeroSection() {
                     transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
                     className="text-3xl md:text-5xl font-bold text-white mb-4"
                 >
-                    Market.Trade.Develop.Design & Grow
+                    Market.Trade.Design.Develop & Grow
                 </motion.h1>
 
                 <motion.p

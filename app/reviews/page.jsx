@@ -27,6 +27,35 @@ import img22 from '@/public/assets/reviews/pm8.jpeg'
 
 import ContactSection from '@/components/ContactForm'
 
+export const metadata = {
+  title: "Client Reviews — Bullish Pixel",
+  description:
+    "Read real client reviews and testimonials about Bullish Pixel’s Shopify development, Trading, WordPress websites, marketing, custom development, coaching, and registration services.",
+  keywords: [
+    "Bullish Pixel Reviews",
+    "Client Testimonials",
+    "Digital Agency Reviews",
+    "Shopify Developer Reviews",
+    "Web Development Testimonials",
+  ],
+  openGraph: {
+    title: "Reviews — Bullish Pixel",
+    description:
+      "Client testimonials about our Trading, Shopify, WordPress, marketing, coaching and custom development services.",
+    url: "https://bullishpixel.com/reviews",
+    type: "website",
+    images: ["https://bullishpixel.com/og-default.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bullish Pixel — Client Reviews",
+    description:
+      "Testimonials about our Trading, Shopify, WordPress, marketing, custom web development services and Tuitions.",
+    images: ["https://bullishpixel.com/og-default.png"],
+  },
+};
+
+
 const ReviewsPage = () => {
     return (
         <div className='p-3 md:p-10 relative'>

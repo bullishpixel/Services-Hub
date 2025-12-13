@@ -18,6 +18,50 @@ import Service from "@/components/Service";
 import HerroSection from "@/components/HerroSection";
 import Link from "next/link";
 import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
+export const metadata = {
+  title: "Bullish Pixel — Trade, Market & Web Solutions",
+  description:
+    "Bullish Pixel is a full-service digital agency offering marketing, trading, Shopify development, WordPress sites, custom web development, tuition, coaching, and company registration (LLC, LTD, Pvt).",
+  keywords: [
+    "Bullish Pixel",
+    "Digital Marketing",
+    "Marketing",
+    "Trading",
+    "Marketing Agency",
+    "Shopify Development",
+    "WordPress Development",
+    "Custom Web Development",
+    "Tuition",
+    "Coaching",
+    "Business Coaching",
+    "Company Registration LLC LTD Pvt",
+    "Web Development Agency Pakistan",
+    "Ecommerce Development",
+  ],
+  openGraph: {
+    title: "Bullish Pixel — Marketing, Trading & Web Developments",
+    description:
+      "Bullish Pixel offers marketing, trading, Shopify Designing, WordPress development, custom web development, tuitions, coaching, and company registration services.",
+    url: "https://bullishpixel.com",
+    type: "website",
+    images: [
+      {
+        url: "https://bullishpixel.com/og-default.png",
+        width: 1200,
+        height: 620,
+        alt: "Bullish Pixel — Digital Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bullish Pixel — Trading, Marketing & Web Solutions",
+    description:
+      "marketing, trading, Shopify Designing, WordPress development, custom web development, tuitions, coaching, and company registration services",
+    images: ["https://bullishpixel.com/og-default.png"],
+  },
+}
+
 export default function Home() {
   return (
     <div >
@@ -40,7 +84,7 @@ export default function Home() {
           <div className="w-full ">Best Markiting Agency</div>
         </div>
 
-        <Image className="md:w-[80vw] z-10" quality={100} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Image" />
+        <Image className="md:w-[70vw] z-30"  priority={true} src={HeroImg.src} height={HeroImg.height} width={HeroImg.width} alt="Hero Image" />
       </div>
 
       <div className=" hidden md:block relative left-[170px] -mt-[110px] bg-transparent z-50  rounded-4xl w-sm py-4 px-5 border border-slate-600">
@@ -201,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      
+
 
       {/* Contact section */}
 
