@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { ToastContainer } from "react-toastify";
-
+import Script from "next/script";
 const CormorantFont = Cormorant_Garamond({
   weight: ['400', '500', '600', '700',],
   subsets: ["latin"],
