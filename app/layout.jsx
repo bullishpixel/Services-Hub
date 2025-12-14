@@ -42,7 +42,7 @@ export const metadata = {
     locale: "en_US",
     siteName: "Bullish Pixel",
     url: "https://bullishpixel.com",
-    images: ["/og-default.png"], 
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,7 +53,11 @@ export default function RootLayout({ children }) {
   return (
     <html className="dark" lang="en">
       <head>
-       <script
+
+        
+
+
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -153,10 +157,37 @@ export default function RootLayout({ children }) {
           }}
         />
 
+         {/* Meta Pixel Code */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '822602123947026');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        {/* End Meta Pixel Code */}
+
       </head>
       <body
         className={`${CormorantFont.className}  antialiased `}
       >
+        {/* Meta Pixel NoScript */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=822602123947026&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
         <ToastContainer />
         <Navbar />
         {children}
