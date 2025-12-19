@@ -37,6 +37,9 @@ export const metadata = {
     "Web Development Agency Pakistan",
     "Ecommerce Development",
   ],
+  icons:{
+    icon: '/favicon.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -101,7 +104,7 @@ export default function RootLayout({ children }) {
                   image: "https://bullishpixel.com/og-default.png",
                   priceRange: "Varies",
                   description:
-                    "Bullish Pixel provides marketing, Trading, Shopify development, WordPress development, custom web development, tuitions, coaching, and LLC, LTD, Pvt company registration services."
+                    "Bullish Pixel provides marketing, Trading with AI, Shopify development, WordPress development, custom web development, tuitions, coaching, and LLC, LTD, Pvt company registration services."
                 },
                 {
                   "@type": "Service",

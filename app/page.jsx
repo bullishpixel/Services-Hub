@@ -21,7 +21,7 @@ import { WEBSITE_SERVICES } from "@/routes/WebsiteRoutes";
 export const metadata = {
   title: "Bullish Pixel — Trade, Market & Web Solutions",
   description:
-    "Bullish Pixel is a full-service digital agency offering marketing, trading, Shopify development, WordPress sites, custom web development, tuition, coaching, and company registration (LLC, LTD, Pvt).",
+    "Bullish Pixel is a full-service digital Hub offering marketing, trading with AI, Shopify development, WordPress sites, custom web development, tuition, coaching, and company registration (LLC, LTD, Pvt).",
   keywords: [
     "Bullish Pixel",
     "Digital Marketing",
