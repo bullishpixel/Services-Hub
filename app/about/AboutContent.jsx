@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import React from 'react'
-import about from '@/public/assets/about/about.webp'
+import about from '@/public/assets/about/about.png'
 import Image from 'next/image'
 import founder from '@/public/assets/about/founder.png'
 import rjb from '@/public/assets/about/rjb.png'
