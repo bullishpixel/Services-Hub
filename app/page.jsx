@@ -5,13 +5,13 @@ import HeroImg from '@/public/assets/home/hero.webp'
 import icon from '@/public/assets/icon.jpeg'
 import { IoStarSharp } from "react-icons/io5";
 import Button from "@/components/Button";
-import group from '@/public/assets/home/grp.jpg'
+import group from '@/public/assets/home/grp.webp'
 import { BsFillRocketFill } from "react-icons/bs";
 import { DiRaphael } from "react-icons/di";
 import { SiHiveBlockchain } from "react-icons/si";
 import { PiUserFocus } from "react-icons/pi";
 import dev from '@/public/assets/home/dev.webp'
-import devM from '@/public/assets/home/devM.jpg'
+import devM from '@/public/assets/home/devM.webp'
 import Faqs from "@/components/FAQS";
 import ContactSection from "@/components/ContactForm";
 import Service from "@/components/Service";

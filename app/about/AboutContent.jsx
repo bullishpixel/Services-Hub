@@ -48,7 +48,7 @@ const AboutContent = () => {
         <div className='md:p-10 p-3'>
             <div className='relative'>
                 <div className='relative'>
-                    <Image className='w-full md:mt-13 mt-20 object-cover rounded-4xl h-[250px] md:h-[350px]' src={about.src} priority={true} height={about.height} width={about.width} alt='about img' />
+                    <Image className='w-full md:mt-13 mt-20 object-contain rounded-4xl h-[250px] md:h-[350px]' src={about.src} priority={true} height={about.height} width={about.width} alt='about img' />
                     <div className="absolute z-20 inset-0 bg-gradient-to-t bottom-0  from-black/90 via-black/10 to-transparent" />
                 </div>
                 <div className='flex justify-center'>
