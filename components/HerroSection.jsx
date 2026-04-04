@@ -67,8 +67,7 @@ export default function HeroSection() {
     return (
         <div className="relative md:h-[115vh] h-[100vh] flex items-center justify-center overflow-hidden bg-[#0a1412]">
             {/* 🌈 Radial background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,90,70,1)_0%,rgba(0,60,50,1)_40%,rgba(40,20,25,1)_85%,rgba(80,10,10,1)_100%)] pointer-events-none"></div>
-
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.6)_0%,rgba(160,60,15,0.7)_35%,rgba(40,20,10,1)_75%,rgba(20,10,5,1)_100%)] pointer-events-none"></div>
             {/* 🌫️ Top gradient overlay */}
             <div className="absolute z-20 inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
 

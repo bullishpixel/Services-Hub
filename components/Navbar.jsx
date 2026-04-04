@@ -16,7 +16,7 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathName = usePathname()
   return (
-    <nav className=' bg-emerald-500/96 md:bg-black/70 pl-0 px-5 h-18 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
+    <nav className=' bg-orange-500/96 md:bg-black/70 pl-0 px-5 h-18 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
       <Link href={WEBSITE_HOME}>
       <div className=' md:px-16'>
         <Image className='w-34 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
@@ -24,12 +24,12 @@ const Navbar = () => {
       </div>
       </Link>
       <div className='bg-black py-2 hidden  font-bold text-lg px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_HOME && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_HOME}>Home</Link>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_ABOUT && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_ABOUT}>About</Link>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_SERVICES && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_SERVICES}>Services</Link>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_PROJECTS && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_PROJECTS}>Projects</Link>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_REVIEWS && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_REVIEWS}>Reviews</Link>
-        <Link className={`py-1 px-5 hover:text-emerald-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-emerald-500 rounded-full bg-gray-900'}`} href={WEBSITE_CONTACT}>Contact</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_HOME && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_HOME}>Home</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_ABOUT && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_ABOUT}>About</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_SERVICES && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_SERVICES}>Services</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_PROJECTS && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_PROJECTS}>Projects</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_REVIEWS && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_REVIEWS}>Reviews</Link>
+        <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_CONTACT}>Contact</Link>
 
 
       </div>

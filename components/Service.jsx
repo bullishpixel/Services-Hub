@@ -16,7 +16,7 @@ const services = [
     {
         id: 1,
         title: "Marketing",
-        icon: <FaInstagram className="text-5xl text-emerald-500" />,
+        icon: <FaInstagram className="text-5xl text-orange-500" />,
         description:
             "Your social media is a ghost town. Meanwhile, your ideal customers are buying from your competitors. We don’t just create content—we build sales pipelines. Bullish Pixel delivers a proven strategy that converts scrollers into buyers and drives real revenue. Stop wasting money. Start dominating.",
         mail: "For queries:",
@@ -205,7 +205,7 @@ const services = [
     {
         id: 2,
         title: "Trading",
-        icon: <GiTrade className="text-5xl text-emerald-500" />,
+        icon: <GiTrade className="text-5xl text-orange-500" />,
         description:
             "Tired of losing money to emotional trading? We replace guesswork with a proven system. Get AI-powered strategies, live market analysis, and expert training that turns your trades into consistent profits. This is your last stop before profitability.",
             mail: "For queries: ",
@@ -378,7 +378,7 @@ const services = [
     {
         id: 3,
         title: "Custom Website Development",
-        icon: <MdOutlineDeveloperMode className="text-5xl text-emerald-500" />,
+        icon: <MdOutlineDeveloperMode className="text-5xl text-orange-500" />,
         description:
             "Your competitors' websites are converting 3x more visitors than yours. We build custom, high-speed websites engineered to turn clicks into customers and stop revenue leaks. Your digital domination starts here.",
             mail: "For queries: ",
@@ -553,7 +553,7 @@ const services = [
     {
         id: 4,
         title: "Shopify Development",
-        icon: <SiShopify className="text-5xl text-emerald-500" />,
+        icon: <SiShopify className="text-5xl text-orange-500" />,
         description:
             "Your Shopify store is leaking revenue. Basic templates create abandoned carts, not loyal customers. We build high-converting, custom Shopify stores engineered to maximize sales and build your brand. Stop losing money. Start dominating.",
              mail: "For queries: ",
@@ -726,7 +726,7 @@ const services = [
     {
         id: 5,
         title: "Wordpress Development",
-        icon: <BsWordpress className="text-5xl text-emerald-500" />,
+        icon: <BsWordpress className="text-5xl text-orange-500" />,
         description:
             "Your WordPress site is slow, insecure, and failing to convert. Generic templates are killing your business growth. We build custom, high-speed WordPress websites engineered for maximum conversions and security. Your digital solution is here.",
             mail: "For queries:",
@@ -896,7 +896,7 @@ const services = [
     {
         id: 6,
         title: "LLC Ltd & Pvt",
-        icon: <TbCertificate className="text-5xl text-emerald-500" />,
+        icon: <TbCertificate className="text-5xl text-orange-500" />,
         description:
             "Stop letting legal complexities stall your global business dreams. We handle USA/UK/Pakistan company formation, tax compliance, and filings so you can focus on growth. Your complete business setup solution is here.",
             mail: "For queries: ",
@@ -1062,171 +1062,7 @@ const services = [
 
         ]
     },
-    {
-        id: 7,
-        title: "Coaching/Tutoring",
-        icon: <GiTeacher className="text-5xl text-emerald-500" />,
-        description:
-            "Bullish Pixel builds high-converting online platforms for tutors and coaches, boosting enrollments, revenue, and student satisfaction with seamless management and scalable solutions.",
-             mail: "For queries:"
-             ,
-             inner:'coaching@bullishpixel.com ',
-        details: [
-            {
-                type: "heading",
-                text: "1. Service Overview",
-            },
-            {
-                type: "paragraph",
-                text: `In a world hungry for knowledge, your expertise is the key. But a great course alone isn't enough. You need a powerful online presence that attracts, convinces, and retains students.`,
-            },
-            {
-                type: "paragraph",
-                text: "Bullish Pixel specializes in crafting premium digital ecosystems for online tutors, coaching programs, and formal education providers. We merge strategic marketing with elegant technology to transform your educational vision into a scalable, profitable online school. This is for visionary educators and coaches who are ready to move beyond one-on-one sessions and build a legacy of learning.",
-            },
-
-            {
-                type: "heading",
-                text: "2. Key Features & Benefits",
-            },
-            {
-                type: "Subheading",
-                text: "Streamlined Student Onboarding & Management",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Benefit:",
-                text: "Reduce administrative overhead and create a seamless sign-up and learning experience that keeps students engaged from day one.",
-            },
-            {
-                type: "Subheading",
-                text: "High-Converting Website & Sales Funnels",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Benefit:",
-                text: "Turn more visitors into enrolled students with landing pages and user journeys designed to demonstrate value and drive action.",
-            },
-            {
-                type: "Subheading",
-                text: "Integrated Payment & Course Delivery Systems",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Benefit:",
-                text: "Get paid easily and deliver your content securely on a robust platform that grows with your course catalog.",
-            },
-            {
-                type: "Subheading",
-                text: "Content Strategy for Student Acquisition",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Benefit:",
-                text: `Attract a consistent flow of qualified leads with a content plan that positions you as a trusted authority in your niche.`,
-            },
-           
-            {
-                type: "Subheading",
-                text: "Data-Driven Performance Analytics",
-            },
-             {
-                type: "pragraph",
-                Benifit: "Benefit:",
-                text: "Make informed decisions with clear insights on student behavior, conversion rates, and revenue metrics.",
-            },
-            {
-                type: "heading",
-                text: "3. How It Helps Clients Grow",
-            },
-            {
-                type: "paragraph",
-                text: "We build the infrastructure for your growth, allowing you to focus on what you do best: teaching.",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Increase Enrollment & Revenue: ",
-                text: "Our conversion-optimized platforms are engineered to systematically grow your student base and maximize your earning potential.",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Scale Your Operations Efficiently: ",
-                text: "Automate enrollment, communication, and content delivery to serve more students without a proportional increase in your workload.",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Build a Recognizable Brand: ",
-                text: "Stand out in a crowded market with a professional, cohesive brand identity that builds trust and commands higher prices.",
-            },
-            {
-                type: "pragraph",
-                Benifit: "Boost Student Satisfaction & Retention: ",
-                text: "A superior user experience leads to happier students, more positive reviews, and a higher lifetime value.",
-            },
-            {
-                type: "heading",
-                text: "4. Why Choose Bullish Pixel",
-            },
-            {
-                type: "paragraph",
-                text: "Choosing a partner for your online education business is a critical decision. Here’s why we are the definitive choice."
-            },
-            {
-                type: "pragraph",
-                Benifit: "We Speak Education & Business: ",
-                text: "We understand the unique challenges of providing education online—from conveying intangible value to building learning communities. Our strategies are built for this specific market."
-            },
-            {
-                type: "pragraph",
-                Benifit: "Results-Focused Partnership: ",
-                text: "We are not just order-takers; we are strategic partners. Your success is our success, and we are invested in achieving your growth targets."
-            },
-            {
-                type: "pragraph",
-                Benifit: "Premium Design with a Purpose: ",
-                text: `Our designs are not just beautiful; they are meticulously crafted to guide user behavior, build trust, and remove friction from the student journey.`
-            },
-            {
-                type: "pragraph",
-                Benifit: "Proven Framework: ",
-                text: `We have a battle-tested process for launching and scaling online education platforms that delivers predictable, positive outcomes.`,
-            },
-            {
-                type: "heading",
-                text: "5. Related Sub-Services",
-            },
-            {
-                type: "paragraph",
-                text: `To build a complete and dominant online presence, we offer:`,
-            },
-            {
-                type: "pragraph",
-                Benifit: "Educational Website & LMS Development: ",
-                text: `Custom-built learning management systems and websites tailored to your pedagogical approach.`
-            },
-            {
-                type: "pragraph",
-                Benifit: "Sales Funnel Design & Optimization: ",
-                text: `Mapping and building the entire customer journey from first click to course enrollment and beyond.`
-            },
-            {
-                type: "pragraph",
-                Benifit: "Branding & Visual Identity for Educators: ",
-                text: `Branding & Visual Identity for Educators: Crafting a memorable brand that resonates with your target student demographic.`
-            },
-            {
-                type: "pragraph",
-                Benifit: "Content Marketing for Student Lead Generation: ",
-                text: `Creating valuable blog posts, lead magnets, and email sequences that build your audience.`
-            },
-            {
-                type: "pragraph",
-                Benifit: "Paid Advertising Management (Meta/Google): ",
-                text: `Driving targeted, ready-to-enroll traffic to your courses and coaching programs.`
-            },
-
-        ]
-    },
+  
 
 ];
 
@@ -1252,7 +1088,7 @@ const Servces = () => {
                         <p className="text-lg md:h-26 overflow-hidden mt-6 ">
                             {service.description}
                         </p>
-                        <p className="md:text-lg font-black pt-1 text-gray-400">{service.mail} <span className="text-emerald-500">{service.inner}</span></p>
+                        <p className="md:text-lg font-black pt-1 text-gray-400">{service.mail} <span className="text-orange-500">{service.inner}</span></p>
                         <div className="mt-3">
                             <Button1
                                 onClick={() => setSelectedService(service)}
@@ -1286,7 +1122,7 @@ const Servces = () => {
                             {/* Close Button */}
                             <button
                                 onClick={() => setSelectedService(null)}
-                                className="fixed top-4 right-4 bg-[#2a2828] hover:bg-emerald-600 transition-all p-2 rounded-full text-white"
+                                className="fixed top-4 right-4 bg-[#2a2828] hover:bg-orange-600 transition-all p-2 rounded-full text-white"
                             >
                                 <IoClose className="text-2xl" />
                             </button>
@@ -1296,15 +1132,15 @@ const Servces = () => {
                                 <div className="bg-[#2a2828] inline-block p-2 rounded-xl mb-3 md:mb-4">
                                     {selectedService.icon}
                                 </div>
-                                <h2 className="md:text-5xl text-2xl font-bold mb-2 text-emerald-400">
+                                <h2 className="md:text-5xl text-2xl font-bold mb-2 text-orange-400">
                                     {selectedService.title}
                                 </h2>
                                 <div>
                                     {selectedService.details.map((block, index) => {
                                         if (block.type === "heading")
-                                            return <h1 key={index} className="text-xl md:text-3xl font-bold mt-4 mb-2 text-emerald-400">{block.text}</h1>;
+                                            return <h1 key={index} className="text-xl md:text-3xl font-bold mt-4 mb-2 text-orange-400">{block.text}</h1>;
                                         if (block.type === "Subheading")
-                                            return <h5 key={index} className="text-lg text-red-400 font-bold mt-4 mb-2 ">{block.text}</h5>;
+                                            return <h5 key={index} className="text-lg text-orange-400 font-bold mt-4 mb-2 ">{block.text}</h5>;
                                         if (block.type === "pragraph")
                                            return <p key={index} className=" text-gray-400 mb-3 leading-relaxed"><span className="text-white font-black text-lg">{block?.Benifit}</span> {block.text}</p>;
                                         if (block.type === "paragraph")

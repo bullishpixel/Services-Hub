@@ -25,13 +25,15 @@ import { toast } from "react-toastify"
 import { useState } from "react"
 import axios from "axios"
 import ButtonLoader from "./ButtonLoader"
+import ServiceCategory from "@/lib/ServiceCategory"
 
 export default function ContactSection() {
     const [loading, setloading] = useState(false)
-     const formSchema = zSchema.pick({
+    const formSchema = zSchema.pick({
         email: true,
         name: true,
         message: true,
+        category: true,
 
     })
     const form = useForm({
@@ -40,11 +42,12 @@ export default function ContactSection() {
             name: "",
             email: "",
             message: "",
+            category: "",
         },
     })
 
-    const onSubmit = async(values) => {
-         try {
+    const onSubmit = async (values) => {
+        try {
             setloading(true)
             const { data: ResponseSend } = await axios.post('/api/sendMail', values)
             if (!ResponseSend.success) {
@@ -59,17 +62,17 @@ export default function ContactSection() {
         } finally {
             setloading(false)
         }
-        
+
     }
 
     return (
-        <section className=" relative z-10 text-white pb-10 md:pb-0 md:mb-10 md:py-24 px-3 md:px-12">
+        <section className=" relative z-10 text-white pb-10 md:pb-0 md:mb-10 md:py-24  md:px-12">
             <div className=" flex flex-col md:flex-row items-center justify-between gap-10">
                 {/* Left Side - Heading */}
                 <div className="flex-1 flex flex-col mb-10 md:mb-0 relative md:bottom-12 items-center text-center md:text-left">
 
                     <h2 className="text-white text-[10rem] md:text-[180px] font-extrabold leading-tight ">Let's</h2>
-                    <h2 className="text-emerald-500 text-[9rem] absolute top-24 md:top-28 md:text-[180px] font-extrabold leading-tight">Talk!</h2>
+                    <h2 className="text-orange-500 text-[9rem] absolute top-24 md:top-28 md:text-[180px] font-extrabold leading-tight">Talk!</h2>
 
                 </div>
 
@@ -93,7 +96,7 @@ export default function ContactSection() {
                                                 <FormControl>
                                                     <Input
                                                         placeholder="Your name..."
-                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-orange-500 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -113,9 +116,35 @@ export default function ContactSection() {
                                                     <Input
                                                         placeholder="Your email..."
                                                         type="email"
-                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-14 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-orange-500 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                    {/* ServiceCategory */}
+                                    <FormField
+                                        control={form.control}
+                                        name="category"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel className="text-gray-300 text-lg font-bold">
+                                                    Service Category
+                                                </FormLabel>
+                                                <FormControl>
+                                                    <select
+                                                        {...field}
+                                                        className="bg-[#1b1b1b] h-14  w-full rounded-3xl text-gray-400 px-4 focus:outline-none border border-white/10"
+                                                    >
+                                                        <option className="text-xl text-orange-500 font-bold" value="">Which service are you interested in?</option>
+                                                        {ServiceCategory.map((el) => (
+                                                            <option className="" value={el.value} key={el.id}>
+                                                                {el.label}
+                                                            </option>
+                                                        ))}
+                                                    </select>
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
@@ -133,7 +162,7 @@ export default function ContactSection() {
                                                     <Textarea
                                                         rows={8}
                                                         placeholder="Write your message..."
-                                                        className="bg-[#1b1b1b]  h-28 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-emerald-500 text-white placeholder-gray-400"
+                                                        className="bg-[#1b1b1b]  h-28 text-xl! font-medium! placeholder:text-lg border-white/10 rounded-3xl focus:shadow-md focus:shadow-orange-500 text-white placeholder-gray-400"
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -144,10 +173,10 @@ export default function ContactSection() {
 
                                     {/* Submit Button */}
                                     <ButtonLoader
-                                       type={'submit'} text={'Submit'} loading={loading}
-                                        className="w-full bg-emerald-500 hover:bg-emerald-600 cursor-pointer text-black font-semibold text-lg py-6 rounded-xl transition-all"
+                                        type={'submit'} text={'Submit'} loading={loading}
+                                        className="w-full bg-orange-500 hover:bg-orange-600 cursor-pointer text-black font-semibold text-lg py-6 rounded-xl transition-all"
                                     />
-                                      
+
                                 </form>
                             </Form>
                         </CardContent>

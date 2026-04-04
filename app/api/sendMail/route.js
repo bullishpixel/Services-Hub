@@ -10,9 +10,10 @@ export async function POST(request) {
             email: true,
             name: true,
             message: true,
+            category: true,
          })
          const validatedData = validationSchema.safeParse(payload);
-         const { email, name,message } = validatedData.data;
+         const { email, name,message, category } = validatedData.data;
          if(!validatedData){
             return NextResponse.json({
                 success:false,
@@ -21,7 +22,7 @@ export async function POST(request) {
 
             })
          }
-         const results = await sendMail(name, email, message);
+         const results = await sendMail(name, email, message ,category);
          if (!results.success) {
             return NextResponse.json({
                 success:false,

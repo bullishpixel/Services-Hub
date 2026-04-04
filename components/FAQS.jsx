@@ -179,34 +179,7 @@ export default function Faqs() {
         },
 
     ];
-     const Tutionfaqs = [
-        {
-            question: "1. Do you work with established institutions or only individual coaches?",
-            answer:
-                "We partner with both. Our solutions are scalable, serving individual experts launching their first course as well as established coaching businesses and formal education providers looking to enhance or migrate their online offerings."
-        },
-        {
-            question: "2. What exactly do you deliver, and how long does a typical project take?",
-            answer:
-                `We deliver a fully functional, high-converting online education platform tailored to your brand, including website, payment integration, and student onboarding. Project timelines typically range from 4 to 12 weeks, depending on the scope and complexity of your specific requirements.`
-        },
-        {
-            question: `3. How do you handle the technical side of hosting and maintenance?`,
-            answer:
-                "We offer managed hosting solutions to ensure your platform is fast, secure, and always online. We also provide ongoing maintenance and support packages to handle updates and technical issues, so you don't have to."
-        },
-        {
-            question: "4. Can you help us market our courses, or do you just build the platform?",
-            answer:
-                "Absolutely. While our core service is building the platform, we offer comprehensive marketing sub-services—including funnel design, content strategy, and paid ads—to ensure you attract students effectively. We can build the engine and help you fuel it."
-        },
-        {
-            question: "5. What is your pricing structure?",
-            answer:
-                `We provide custom project quotes based on your specific goals and requirements. This ensures you only pay for what you truly need. We discuss budget and ROI expectations transparently from our very first conversation.`
-        },
-
-    ];
+   
 
     const toggleFAQ = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -215,7 +188,7 @@ export default function Faqs() {
     return (
         <div className="bg-[#0b0b0b] px-6 md:px-10">
             <div className="flex justify-center items-center flex-col ">
-                <span className="text-emerald-500 text-sm font-black px-3 mb-3 py-0.5 rounded-full bg-gray-800">FREQUENTLY ASKED QUESTIONS</span>                   
+                <span className="text-orange-500 text-sm font-black px-3 mb-3 py-0.5 rounded-full bg-gray-800">FREQUENTLY ASKED QUESTIONS</span>                   
                  
                 <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">
                     We've Got Answers!
@@ -239,7 +212,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -282,7 +255,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -325,7 +298,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -368,7 +341,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -411,7 +384,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -454,7 +427,7 @@ export default function Faqs() {
                             <motion.div
                                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
+                                className="p-2 bg-orange-500 rounded-full text-black"
                             >
                                 <ChevronDown size={20} />
                             </motion.div>
@@ -479,49 +452,7 @@ export default function Faqs() {
                     </div>
                 ))}
             </div>
-            <div className="max-w-4xl mx-auto">
-                 <h2 className="text-center text-2xl font-bold mt-10 text-red-500 my-2">About Coaching/Tutoring Services</h2>
-                {LLCfaqs.map((faq, index) => (
-                    <div
-                        key={index}
-                        className="mb-4 bg-[#121212] border border-white/10 rounded-4xl p-5 transition-all duration-300"
-                    >
-                        {/* Header */}
-                        <button
-                            className="w-full flex justify-between cursor-pointer  items-center text-left"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <span className="text-white font-bold text-sm  md:text-xl">
-                                {faq.question}
-                            </span>
-                            <motion.div
-                                animate={{ rotate: activeIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="p-2 bg-emerald-500 rounded-full text-black"
-                            >
-                                <ChevronDown size={20} />
-                            </motion.div>
-                        </button>
-
-                        {/* Answer */}
-                        <AnimatePresence>
-                            {activeIndex === index && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                                    className="overflow-hidden mt-3"
-                                >
-                                    <p className="text-gray-300 font-semibold text-xs md:text-lg leading-relaxed">
-                                        {faq.answer}
-                                    </p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ))}
-            </div>
+          
         </div>
     );
 }
