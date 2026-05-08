@@ -53,7 +53,7 @@ const AboutContent = () => {
                 </div>
                 <div className='flex justify-center'>
 
-                    <h2 className='md:text-6xl text-4xl absolute font-black bottom-6 text-center z-30'>Hey There! Welcome to <span className='text-orange-500 block'>Bullish <span className="text-red-500">Pixel!</span></span></h2>
+                    <h2 className='md:text-6xl text-4xl absolute font-black bottom-6 text-center z-30'>Hey There! Welcome to <span className='text-orange-500 block'>Bullish <span className="text-white">Pixel!</span></span></h2>
                 </div>
             </div>
             {/* About */}
@@ -64,7 +64,7 @@ const AboutContent = () => {
                 </div>
                 <div className='flex flex-col md:py-10 md:flex-row gap-10 md:gap-5'>
                     <div className='md:w-[55%]  py-5 md:py-0 md:pt-8 md:p-0 md:text-start text-xl md:text-2xl font-bold text-gray-500'>
-                        Welcome to <span className="text-orange-500">Bullish</span> <span className="text-red-500">Pixel</span> — where creativity meets strategy and innovation fuels growth. We’re not just a digital marketing agency we’re a dedicated team of visionaries, problem-solvers, and tech enthusiasts committed to transforming your brand’s digital presence.
+                        Welcome to <span className="text-orange-500">Bullish</span> <span className="text-white">Pixel</span> — where creativity meets strategy and innovation fuels growth. We’re not just a digital marketing agency we’re a dedicated team of visionaries, problem-solvers, and tech enthusiasts committed to transforming your brand’s digital presence.
 
                         Driven by passion and guided by data, we blend creativity with cutting-edge technology to deliver tailored solutions that inspire, engage, and deliver real results. At Bullish Pixel, every pixel matters — because we believe the future of your business is built one pixel at a time.
 
@@ -125,7 +125,7 @@ const AboutContent = () => {
                     <h2 className="font-black text-4xl md:text-6xl">Meet The Founder!</h2>
                 </div>
                 <div className="text-gray-500 text-xl font-semibold pt-6 md:pt-12 pb-5 md:text-3xl">
-                    <span className="text-orange-500">Malik Asif</span> — the visionary mind behind Bullish Pixel. With deep expertise in <span className="text-white">e-commerce, trading behavior, and digital marketing</span>, his passion for innovation and results fuels our growth. Guided by Malik’s strategic vision and creative leadership, <span className="text-orange-500">Bullish</span> <span className="text-red-500">Pixel</span> continues to set new standards of excellence.
+                    <span className="text-orange-500">Malik Asif</span> — the visionary mind behind Bullish Pixel. With deep expertise in <span className="text-white">e-commerce, trading behavior, and digital marketing</span>, his passion for innovation and results fuels our growth. Guided by Malik’s strategic vision and creative leadership, <span className="text-orange-500">Bullish</span> <span className="text-white">Pixel</span> continues to set new standards of excellence.
                 </div>
                 <div className="md:mx-20 flex py-10 flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 relative  flex justify-center">
@@ -134,13 +134,13 @@ const AboutContent = () => {
                         <div className="absolute top-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-orange-500/80 blur-3xl z-10" />
 
                         <div className="md:text-7xl text-4xl absolute z-20 bottom-0 md:bottom-3 ps-10 font-black text-orange-500 drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]">
-                            MALIK <span className="text-red-500 drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]">ASIF</span>
+                            MALIK <span className="text-white drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]">ASIF</span>
                         </div>
 
                     </div>
                     <div className="md:w-1/2 flex flex-col justify-between">
                         <div className="font-bold md:pt-30 text-center md:text-lg md:text-left p-3 md:p-0 text-gray-500">
-                            At <span className="text-orange-500">Bullish <span className="text-red-500">Pixel</span></span>, we envision a future where data-driven creativity and innovation empower every brand to rise above the noise. Our mission is to bridge the gap between <span className="text-white">technology and human connection</span> — transforming ideas into measurable success. <span className="text-white">With Malik Asif’s forward-thinking leadership</span>, we’re building a digital ecosystem where businesses not only grow but thrive with purpose. From AI-powered marketing to next-generation trading insights, Bullish Pixel is committed to leading the digital revolution with transparency, performance, and creativity at its core.
+                            At <span className="text-orange-500">Bullish <span className="text-white">Pixel</span></span>, we envision a future where data-driven creativity and innovation empower every brand to rise above the noise. Our mission is to bridge the gap between <span className="text-white">technology and human connection</span> — transforming ideas into measurable success. <span className="text-white">With Malik Asif’s forward-thinking leadership</span>, we’re building a digital ecosystem where businesses not only grow but thrive with purpose. From AI-powered marketing to next-generation trading insights, Bullish Pixel is committed to leading the digital revolution with transparency, performance, and creativity at its core.
 
                             We don’t just follow trends — we create them. <span className="text-white">The future is bullish, and it’s pixel by pixel.</span>
                         </div>
@@ -223,7 +223,7 @@ const AboutContent = () => {
 
                     </div>
                     <div className="bg-[#1f1d1d] flex flex-col items-center p-4 rounded-3xl">
-                        <h2 className="text-orange-500 font-extrabold text-2xl">Malik <span className="text-red-500">Asif</span></h2>
+                        <h2 className="text-orange-500 font-extrabold text-2xl">Malik <span className="text-white">Asif</span></h2>
                         <p className="font-semibold text-lg text-gray-400">Founder & Instructor  </p>
                     </div>
                 </div>
@@ -240,7 +240,7 @@ const AboutContent = () => {
 
                     </div>
                     <div className="bg-[#1f1d1d] flex flex-col items-center p-4 rounded-3xl">
-                        <h2 className="text-orange-500 font-extrabold text-2xl">Rajab <span className="text-red-500">Ali</span></h2>
+                        <h2 className="text-orange-500 font-extrabold text-2xl">Rajab <span className="text-white">Ali</span></h2>
                         <p className="font-semibold text-lg text-gray-400">CEO & Web Developer</p>
                     </div>
                 </div>
@@ -255,7 +255,7 @@ const AboutContent = () => {
 
                     </div>
                     <div className="bg-[#1f1d1d] flex flex-col items-center p-4 rounded-3xl">
-                        <h2 className="text-orange-500 font-extrabold text-2xl">Muhammad <span className="text-red-500">Hamza</span></h2>
+                        <h2 className="text-orange-500 font-extrabold text-2xl">Muhammad <span className="text-white">Hamza</span></h2>
                         <p className="font-semibold text-lg text-gray-400">HR & Marketing Expert</p>
                     </div>
                 </div>
