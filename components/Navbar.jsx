@@ -15,11 +15,11 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathName = usePathname()
   return (
-    <nav className=' bg-black/70 pl-0 px-5 h-18 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
+    <nav className=' bg-black md:bg-black/70 pl-0 px-5 h-18 w-full fixed top-0 left-0 z-50   flex justify-between items-center'>
       <Link href={WEBSITE_HOME}>
-      <div className=' md:px-16'>
-        <Image className='w-34 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
-        <Image className='w-30  md:hidden h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
+      <div className=' md:px-16 px-2 '>
+        <Image className='w-30 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
+        <Image className='w-26  md:hidden h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
       </div>
       </Link>
       <div className='bg-black py-2 hidden  font-bold text-lg px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
