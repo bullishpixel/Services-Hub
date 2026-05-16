@@ -20,7 +20,7 @@ export const metadata = {
     template: "%s | Bullish Pixel",
   },
   description:
-    "Bullish Pixel is a full-service digital agency offering marketing, trading, Shopify development, WordPress sites, custom web development, tuition, coaching, and company registration (LLC, LTD, Pvt).",
+    "Bullish Pixel is a full-service digital agency offering marketing, trading, Shopify development, WordPress sites, custom web development and company registration (LLC, LTD, Pvt).",
   keywords: [
     "Bullish Pixel",
     "Digital Marketing",
@@ -30,8 +30,6 @@ export const metadata = {
     "Shopify Development",
     "WordPress Development",
     "Custom Web Development",
-    "Tuition",
-    "Coaching",
     "Business Coaching",
     "Company Registration LLC LTD Pvt",
     "Web Development Agency Pakistan",

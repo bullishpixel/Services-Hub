@@ -30,7 +30,7 @@ import ContactSection from '@/components/ContactForm'
 export const metadata = {
   title: "Client Reviews — Bullish Pixel",
   description:
-    "Read real client reviews and testimonials about Bullish Pixel’s Shopify development, Trading, WordPress websites, marketing, custom development, coaching, and registration services.",
+    "Read real client reviews and testimonials about Bullish Pixel’s Shopify development, Trading, WordPress websites, marketing, custom development and registration services.",
   keywords: [
     "Bullish Pixel Reviews",
     "Client Testimonials",

@@ -4,7 +4,7 @@ import AboutContent from "./AboutContent";
 export const metadata = {
   title: "About Us — Bullish Pixel",
   description:
-    "Bullish Pixel is a full-services Hub offering marketing, Trading, Shopify development, WordPress sites, custom web development, tuition, coaching, and company registration (LLC, LTD, Pvt).",
+    "Bullish Pixel is a full-services Hub offering marketing, Trading, Shopify development, WordPress sites, custom web development and company registration (LLC, LTD, Pvt).",
   keywords: [
     "About Bullish Pixel",
     "Digital Agency Team",

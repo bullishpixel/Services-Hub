@@ -12,7 +12,7 @@ import Faqs from '@/components/FAQS'
 export const metadata = {
   title: "Our Services — Marketing, Trading with AI & Web Solutions",
   description:
-    "Explore Bullish Pixel’s range of digital services including Trading, Shopify development, WordPress websites, marketing, custom web applications, tuitions, coaching, and LLC/LTD/Pvt company registration.",
+    "Explore Bullish Pixel’s range of digital services including Trading, Shopify development, WordPress websites, marketing, custom web applications and LLC/LTD/Pvt company registration.",
   keywords: [
     "Bullish Pixel Services",
     "Trading with AI",
@@ -20,14 +20,13 @@ export const metadata = {
     "Shopify Development",
     "WordPress Development",
     "Marketing Services",
-    "Tuitions Services",
     "Custom Web Development",
     "Company Registration Services",
   ],
   openGraph: {
     title: "Services — Bullish Pixel",
     description:
-      "Professional services including Shopify, WordPress, marketing, custom development, trading tuition, coaching, and company registration.",
+      "Professional services including Shopify, WordPress, marketing, custom development, trading  and company registration.",
     url: "https://bullishpixel.com/services",
     type: "website",
     images: ["https://bullishpixel.com/og-default.png"],

@@ -3,7 +3,7 @@ import ContactContent from "./ContactSection";
 export const metadata = {
   title: "Contact Us — Bullish Pixel",
   description:
-    "Contact Bullish Pixel for Trading, Shopify development, WordPress websites, marketing services, custom web apps, tuitions, coaching, or company registration. Get a free consultation or quote.",
+    "Contact Bullish Pixel for Trading, Shopify development, WordPress websites, marketing services, custom web apps or company registration. Get a free consultation or quote.",
   keywords: [
     "Contact Bullish Pixel",
     "Digital Agency Contact",
