@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import logoD from '@/public/assets/logoD.png'
+import logoM from '@/public/assets/logoM.png'
 import { CgMenuMotion } from "react-icons/cg";
 import Button from './Button'
 import Image from 'next/image'
@@ -19,7 +20,7 @@ const Navbar = () => {
       <Link href={WEBSITE_HOME}>
       <div className=' md:px-16 px-2 '>
         <Image className='w-30 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
-        <Image className='w-26  md:hidden h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
+        <Image className='w-26  md:hidden h-auto' src={logoM.src} height={logoM.height} width={logoM.width} alt='logo'/>
       </div>
       </Link>
       <div className='bg-black py-2 hidden  font-bold text-lg px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
@@ -31,6 +32,9 @@ const Navbar = () => {
         <Link className={`py-1 px-5 hover:text-orange-500 transition-all duration-500  rounded-full ${pathName === WEBSITE_CONTACT && 'text-orange-500 rounded-full bg-gray-900'}`} href={WEBSITE_CONTACT}>Contact</Link>
 
 
+      </div>
+      <div className="text-2xl font-bold  text-orange-500 md:hidden">
+        Bullish <span className="text-white">Pixel</span> 
       </div>
       <div className='hidden md:block'>
         <Link href={WEBSITE_CONTACT}>
