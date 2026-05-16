@@ -11,7 +11,7 @@ import { DiRaphael } from "react-icons/di";
 import { SiHiveBlockchain } from "react-icons/si";
 import { PiUserFocus } from "react-icons/pi";
 import dev from '@/public/assets/home/dev.webp'
-import devM from '@/public/assets/home/devM.webp'
+import devM from '@/public/assets/home/devM.png'
 import Faqs from "@/components/FAQS";
 import ContactSection from "@/components/ContactForm";
 import Service from "@/components/Service";
