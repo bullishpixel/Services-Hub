@@ -20,7 +20,7 @@ const Navbar = () => {
       <Link href={WEBSITE_HOME}>
       <div className=' md:px-16 px-2 '>
         <Image className='w-30 hidden md:block h-auto' src={logoD.src} height={logoD.height} width={logoD.width} alt='logo'/>
-        <Image className='w-16  md:hidden h-auto' src={logoM.src} height={logoM.height} width={logoM.width} alt='logo'/>
+        <Image className='w-14  md:hidden h-auto' src={logoM.src} height={logoM.height} width={logoM.width} alt='logo'/>
       </div>
       </Link>
       <div className='bg-black py-2 hidden  font-bold text-lg px-4 border  border-slate-700 rounded-full text-white md:flex items-center gap-5 '>
@@ -33,9 +33,9 @@ const Navbar = () => {
 
 
       </div>
-      <div className="text-3xl font-bold  text-orange-500 md:hidden">
+      <a href={WEBSITE_HOME} className="text-[27px] font-bold  text-orange-500 md:hidden">
         Bullish <span className="text-white">Pixel</span> 
-      </div>
+      </a>
       <div className='hidden md:block'>
         <Link href={WEBSITE_CONTACT}>
         <Button className='' type='button' text='Get A Quote' />
