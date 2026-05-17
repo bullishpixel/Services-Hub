@@ -33,9 +33,9 @@ const Navbar = () => {
 
 
       </div>
-      <a href={WEBSITE_HOME} className="text-[27px] font-bold  text-orange-500 md:hidden">
+      <Link href={WEBSITE_HOME} className="text-[27px] font-bold  text-orange-500 md:hidden">
         Bullish <span className="text-white">Pixel</span> 
-      </a>
+      </Link>
       <div className='hidden md:block'>
         <Link href={WEBSITE_CONTACT}>
         <Button className='' type='button' text='Get A Quote' />
